@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="#">
+
+    <title>Send Money</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+
+<!-- Bank Account Recieve Popup Start -->
+
+<div class="modal fade" id="bank-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      
+       <div class="single-popup">
+         <div class="single-pop-title">
+           <h4>Bank Account Receiver Detailservier Details</h4>
+         </div>
+         <form>
+         <div class="row">
+           <div class="col-md-3"><label>Your Name:</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="David Thompson"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-3"><label>Bank Name</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="Bank of America"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-3"><label>Bank Code:</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="0111"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-3"><label>Account#</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="1596 Feathers Hooves Drive, Scarsdale, NY"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-3"><label>Mobile#</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="123 9652 456"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-6"></div>
+           <div class="col-md-6"><button>Submit</button></div>
+         </div>
+         </form>
+       </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Bank Account Recieve Popup Start -->
+
+
+<!-- Reciever info Popup Start -->
+
+<div class="modal fade" id="rcivr-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      
+       <div class="single-popup">
+         <div class="single-pop-title">
+           <h4>receiver information</h4>
+         </div>
+         <form>
+         <div class="row">
+           <div class="col-md-3"><label>Your Name:</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="David Thompson"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-3"><label>ID#</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="ASD326596232"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-3"><label>DOB</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="9/28/2020"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-3"><label>Mobile#</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="+1 212 3659"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-3"><label>Address:</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="1596 Feathers Hooves Drive, Scarsdale, NY"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-6"></div>
+           <div class="col-md-6"><button>Submit</button></div>
+         </div>
+         </form>
+       </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- Reciever info Popup Start -->
+
+    <header class="inn-hdr">
+      <!-- Begin: Top Row -->
+      <div class="top-row">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6"></div>
+          </div>
+        </div>
+      </div>
+      <!-- END: Top Row -->
+
+      <!-- Begin: Bottom Row -->
+      <div class="bottom-row">
+        <div class="container">
+           <div class="row">
+
+            <div class="col-md-3">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="index.html"><img src="images/Logo.svg" alt=""></a>
+            </div>
+            </div>
+
+            <div class="col-md-9"> 
+            <nav class="navbar navbar-default">  
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="send-money.html">Pick up cash</a></li>
+                <li><a href="transfer.html">Track Transfer</a></li>
+                <li><a href="find-location.html">Find Location</a></li>
+                <li><a href="reward-points.html">Reward Points</a></li>
+                <li><a href="transactions.html">All Transactions</a></li>
+                <li>
+                <div class="dropdown userProfile">
+                 <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                 <img src="images/prof-img.png" alt="" class="userImg"> <span>Welcome</span>David Thomas <i class="fa fa-angle-down"></i></button>
+                 <ul class="dropdown-menu inn-prnt" aria-labelledby="dropdownMenu1">
+                  <li><a href="my-profile.html"><i class="fa fa-user" aria-hidden="true"></i>My Profile</a></li>
+                  <li><a href="e-wallet.html"><i class="fa fa-money" aria-hidden="true"></i>E-Wallet</a></li>
+                  <li><a href="notifications.html"><i class="fa fa-bell" aria-hidden="true"></i>Notification</a></li>
+                  <li><a href="#forgot-pop" data-dismiss="modal" data-toggle="modal"><i class="fa fa-key" aria-hidden="true"></i>Change Password</a></li>
+                  <li><a class="drop-btn" href="">Sign Out</a></li>
+                  </ul>
+                  </div>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+          </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- END: Bottom Row -->
+    </header>
+    
+     
+     <!-- Detail Form Sec Start -->
+        <section class="deatil-form-bg">
+          <div class="container">
+              <div class="row">
+            
+            <div class="col-md-8">
+            <!-- Form Block 1 Start -->  
+            <div class="loc-blk-cvr">
+              <div class="loc-title">
+                <h3>Send Money Online</h3>
+                <p>Send your money on anytime, anywhere in the world.</p>
+              </div>
+              
+              <form>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Your receiver’s country and send amount</label>
+                    <select><option>Last day</option></select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label>You Send</label>
+                    <div class="flg-blk flg-blk1">
+                    <input type="" name="" placeholder="100.00">
+                     <div class="drop-dl">
+                      <a class="lang-chose" href="#"><img src=""><span>USD</span></a>
+                        <ul>
+                        <li class="lang-item-en current-lang"><a href="#" hreflang="en-US"><img alt="uk" title="uk" src="images/uk-flg.png"></a></li>
+                        <li class="lang-item lang-item-5 lang-item-ar"><a href="#" hreflang="ar-AE"><img alt="fr" title="fr" src="images/fr-flg.png"></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <label>Recipient Gets</label>
+                    <div class="flg-blk">
+                    <input type="" name="" placeholder="84.2426">
+                    <div class="drop-dl">
+                      <a class="lang-chose" href="#"><img src=""><span>USD</span></a>
+                        <ul>
+                        <li class="lang-item-en current-lang"><a href="#" hreflang="en-US"><img alt="uk" title="uk" src="images/uk-flg.png"></a></li>
+                        <li class="lang-item lang-item-5 lang-item-ar"><a href="#" hreflang="ar-AE"><img alt="fr" title="fr" src="images/fr-flg.png"></a></li>
+                        </ul>
+                        </div>
+                        </div>
+                    </div>
+                  </div>
+                  <h6 class="tg-line">Estimated Exchange rate: <span class="red">100USD = 1 USD = 0.842426 EUR</span></h6>
+                </div>
+                </form>
+              
+              <div class="loc-blk-cvr recieve-mony">
+               <div class="recv-mny-title">
+                 <h4>How does your receiver want the money?</h4>
+               </div>
+               <div class="row">
+                 
+                 <div class="col-md-4">
+                   <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#bank-pop">
+                      <img src="images/rv-mny-1.svg" alt="">
+                      <span>
+                       <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                       <label for="fruit1"></label>
+                       </span>
+                      <h6>Cash pick up</h6>
+                   </div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#rcivr-pop">
+                      <img src="images/rv-mny-2.svg" alt="">
+                      <span>
+                       <input type="checkbox" id="fruit2" name="fruit-1" value="Apple">
+                       <label for="fruit1"></label>
+                       </span>
+                      <h6>Home Delivery</h6>
+                   </div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="revc-mny-blk">
+                      <img src="images/rv-mny-3.svg" alt="">
+                      <span>
+                       <input type="checkbox" id="fruit3" name="fruit-1" value="Apple">
+                       <label for="fruit1"></label>
+                       </span>
+                      <h6>E-Wallet</h6>
+                   </div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="revc-mny-blk">
+                      <img src="images/rv-mny-4.svg" alt="">
+                      <span>
+                       <input type="checkbox" id="fruit4" name="fruit-1" value="Apple">
+                       <label for="fruit1"></label>
+                       </span>
+                      <h6>Bank Account</h6>
+                   </div>
+                 </div>
+
+               </div>
+             </div> 
+
+
+             <div class="loc-blk-cvr recieve-mony">
+               <div class="recv-mny-title">
+                 <h4>How would you like to pay?</h4>
+               </div>
+               <div class="row">
+                 
+                 <div class="col-md-4">
+                   <div class="revc-mny-blk">
+                      <img src="images/pay-icon1.svg" alt="">
+                      <span>
+                       <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
+                       <label for="fruit1"></label>
+                       </span>
+                      <h6>Credit Card</h6>
+                   </div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="revc-mny-blk">
+                      <img src="images/pay-icon2.svg" alt="">
+                      <span>
+                       <input type="checkbox" id="fruit2" name="fruit-1" value="Apple">
+                       <label for="fruit1"></label>
+                       </span>
+                      <h6>Dabit Card</h6>
+                   </div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="revc-mny-blk">
+                      <img src="images/pay-icon3.svg" alt="">
+                      <span>
+                       <input type="checkbox" id="fruit3" name="fruit-1" value="Apple">
+                       <label for="fruit1"></label>
+                       </span>
+                      <h6>PayPal</h6>
+                   </div>
+                 </div>
+                 <div class="col-md-4">
+                   <div class="revc-mny-blk">
+                      <img src="images/pay-icon4.svg" alt="">
+                      <span>
+                       <input type="checkbox" id="fruit4" name="fruit-1" value="Apple">
+                       <label for="fruit1"></label>
+                       </span>
+                      <h6>Ewallet</h6>
+                   </div>
+                 </div>
+
+               </div>
+             </div> 
+
+            </div>
+            <!-- Form Block 1 End -->
+
+             
+
+
+            <div class="col-md-4">
+             
+             <div class="sumry-blk">
+               <h4>Summary</h4>
+               <ul>
+                 <li>Transfer amount <span>200.00 EUR</span></li>
+                 <li>Transfer fee <span>+0.00 EUR</span></li>
+                 <li>Transfer total <span>200.00 EUR</span></li>
+               </ul>
+               <h5>Total to receiver <span>28500 eUR</span></h5>
+               <p>Service time:1: <span>Business daysBusiness days</span></p>
+             </div>
+
+
+             <div class="trms-con">
+               <h4>Terms and Conditions.</h4>
+               <p>These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.</p>
+
+               <p>These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.</p>
+
+               <p>Minors or people below 18 years old are not allowed to use this Website.</p>
+
+               <p>Other than the content you own, under these Terms, Company Name and/or its licensors own all the intellectual property rights and materials contained in this Website.</p>
+
+               <p>You are granted limited license only for purposes of viewing the material contained on this Website. You are specifically restricted from all of the following:</p>
+
+               <p>publishing any Website material in any other media; selling, sublicensing and/or otherwise commercializing any Website material; publicly performing and/or showing any Website material;</p>
+               <a href="">Send Money</a>
+             </div>
+
+            <div
+
+
+            </div>
+          </div>
+        </section>
+     <!-- Detail Form Sec End -->
+
+
+     <!-- Newsletter Sec Start -->
+      <section class="nwsltr-sec">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-8">
+              <div class="nwesltr-blk">
+                <form>
+                  <input type="" name="" placeholder="Enter your email address" required="">
+                  <button>Subscribe</button>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="nwesltr-blk-title">
+                <h6>Email</h6>
+                <h3>Subscribe to Our Newsletter</h3>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+     <!-- Newsletter Sec End -->
+
+
+     <!-- Footer Start -->
+      <footer>
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-4">
+              <div class="ftr-logo">
+                <img src="images/logo.svg" alt="">
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast</p>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="ftr-links ftr-links1">
+                 <h4>Support</h4>
+                 <ul>
+                   <li><a href="">FAQ</a></li>
+                   <li><a href="">Contact us</a></li>
+                   <li><a href="">Term Service</a></li>
+                 </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="ftr-links">
+                 <h4>Download</h4>
+                 <ul>
+                   <li><a href="">Android (Google Play)</a></li>
+                   <li><a href="">Apple (App Store)</a></li>
+                   <li><a href="">ChromeOS (Coming soon)</a></li>
+                 </ul>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="ftr-info">
+                 <h4>Contact us</h4>
+                 <ul>
+                   <li><i class="fa fa-map-marker" aria-hidden="true"></i><a href="">01 Overille Road Apt.786 California, USA</a></li>
+                   <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="">uijungle@gmail.com</a></li>
+                   <li><i class="fa fa-phone" aria-hidden="true"></i><a href="">+123 456 789</a></li>
+                 </ul>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </footer>
+
+      <div class="copyrit">
+        <div class="container">
+          <div class="row">
+            
+            <div class="col-md-4">
+              <ul class="ftr-lang">
+                <li><a href=""><img src="images/197375.svg" alt=""></a></li>
+                <li><a href=""><img src="images/197374.svg" alt=""></a></li>
+                <li><a href=""><img src="images/197484.svg" alt=""></a></li>
+                <li><a href=""><img src="images/197419.svg" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <p>© 2020 copyright all right reserved by Cmolds</p>
+            </div>
+            <div class="col-md-4">
+              <ul class="ftr-soc">
+                <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+                <li><a href=""><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+     <!-- Footer End -->
+
+
+
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/all.js"></script>
+    <script src="js/custom.min.js"></script>
+
+  </body>
+</html>
