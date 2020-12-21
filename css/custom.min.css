@@ -32,6 +32,9 @@ h1, h2, h3, h4, h5, h6, p, a, ul, li{
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
+.no-padding {
+    padding: 0;
+}
 a:hover{
 	text-decoration: none;
 }
@@ -152,7 +155,7 @@ header .row {
     background-color: #3584D5;
 }
 .slide-btn2 {
-    background-color: #9190A2;
+    background-color: #94c245;
 }
 .slide-cap-img img {
     float: right;
@@ -171,6 +174,7 @@ header .row {
     color: #1A284D;
     font-size: 42px;
     margin: 0 0 13px;
+    text-transform: capitalize;
 }
 .do-panexp-title {
     width: 70%;
@@ -498,7 +502,7 @@ input[type="checkbox"]:checked + label::before {
 }
 .pro-tble td img {
     position: relative;
-    left: 80px;
+    left: -20px;
 }
 .tbl-hdr {
     background-color: #F6F6F6;
@@ -524,7 +528,7 @@ input[type="checkbox"]:checked + label::before {
     text-align: right;
 }
 .total-blk-btn a {
-    background-color: #d90000;
+    background-color: #94c245;
     color: #fff;
     font-size: 16px;
     display: inline-block;
@@ -902,7 +906,7 @@ input[type="checkbox"]:checked + label::before {
 .slide-fld {
     width: 600px;
     background-color: #fff;
-    padding: 18px 30px;
+    padding: 18px 20px;
     border-radius: 10px;
     margin-top: -110px;
 }
@@ -1086,7 +1090,7 @@ input[type="checkbox"]:checked + label::before {
     background-color: #F4F8FD;
 }
 .popup-sign-form {
-    padding-right: 8%;
+    padding-right: 5%;
 }
 .col-popup .row {
     display: flex;
@@ -1137,7 +1141,7 @@ input[type="checkbox"]:checked + label::before {
     width: 100%;
     background-color: #93c144;
     border: none;
-    color: #3584d5;
+    color: #fff;
     padding: 12px 0;
     border-radius: 30px;
 }
@@ -1198,8 +1202,79 @@ input[type="checkbox"]:checked + label::before {
     background-color: transparent;
     color: #93c144 !important;
 }   
+select {
+    width: 100%;
+    background-color: #F6F6F6;
+    border: none;
+    padding: 9px 14px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+}
+input.date {}
+.statement{float: right;
+    background-color: #93c144;
+    color: #fff;
+    border: none;
+    padding: 12px 50px;
+    border-radius: 30px;}
+.statement i{margin-right:10px}
+.folder-img{height:100px}
+.folder-img img{height:100%}
+.rates p, .rates span{font-size:12px;margin-bottom:0}
+.rates span {color:#DC3027; display:block}
+.slide-fld .col-md-3 {
+    padding: 0;
+    margin:0;
+}
+input.dob[type="date"]::-webkit-inner-spin-button,
+input.dob[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+input.dob {
+    padding: 8px 10px !important;
+}
+.modal.signin-pop {
+    z-index: 1051;
+}
+.sign-up-btn {
+    width: 100%;
+    background-color: #93c144;
+    border: none;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 30px;
+}
+input[type="radio"]{display:none}
+input[type="radio"]:checked + label::before {
+    background-color: #93C144;
+    border-color: #93C144;
+    color: #fff;
+    line-height: 17px;
+}
 
-
+input[type="radio"] + label::before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 20px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 10px;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+table tbody tr th, table tbody tr td {
+    text-align: center !important;
+}
+i.fa.fa-minus, i.fa.fa-plus {
+    font-size: 12px;
+    margin: 5px;
+    cursor:pointer;
+}
 @media only screen and (min-device-width:520px) and (max-device-width:767px) and (orientation:portrait) {}
 @media only screen and (min-device-width:120px) and (max-device-width:750px) and (orientation:landscape) {}
 @media only screen and (min-device-width:751px) and (max-device-width:999px) and (orientation:portrait) {}

@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="#">
+    <link rel="icon" href="./images/favicon.png">
+
 
     <title>E-wallet</title>
 
@@ -49,7 +50,7 @@
               </button>
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li><a href="send-money.html">Pick up cash</a></li>
+                <li><a href="send-money.html">Home</a></li>
                 <li><a href="transfer.html">Track Transfer</a></li>
                 <li><a href="find-location.html">Find Location</a></li>
                 <li><a href="reward-points.html">Reward Points</a></li>
@@ -96,17 +97,21 @@
                 <div class="row">
                   
                   <div class="col-md-4">
-                    <div class="wlet-blk">
-                      <i class="fa fa-money" aria-hidden="true"></i>
+                    <div class="wlet-blk text-center">
+                      <span class="folder-img text-center">
+                        <img src="./images/folder.png" alt="">
+                      </span>
                       <h4>$2956.00</h4>
                       <h6>Available Balance</h6>
                     </div>
                   </div>
                   <div class="col-md-4">
-                    <div class="dep-amm">
-                      <i class="fa fa-plus-circle" aria-hidden="true"></i>
-                      <h5>Deposite Amount</h5>
-                    </div>
+                    <a href="#">
+                      <div class="dep-amm"  data-toggle="modal" data-target="#deposit-money-pop" >
+                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                        <h5>Deposite Amount</h5>
+                      </div>
+                    </a>
                   </div>
 
                 </div>
@@ -129,7 +134,7 @@
 
                   <div class="col-md-6">
                     <div class="loc-title">
-                      <h3>Interest Earned</h3>
+                      <h3>Expected Interest</h3>
                       <p>In publishing and graphic design, Lorem ipsum...</p>
                     </div>
                     <div class="wlet-blk2 wlet-blk3">
@@ -147,31 +152,28 @@
                 <table>
                   <tr class="tbl-hdr">
                     <th>Date</th>
-                    <th>Description</th>
+                    <!-- <th>Description</th> -->
                     <th>Type</th>
                     <th>Amount</th>
                   </tr>
                   <tr>
                     <td>08/19/2020</td>
-                    <td>Envato March 2019 Member Payment</td>
                     <td>interest</td>
                     <td>$562.00</td>
                   </tr>
                   <tr>
                     <td>08/19/2020</td>
-                    <td>Envato March 2019 Member Payment</td>
+                    <!-- <td>Envato March 2019 Member Payment</td> -->
                     <td>interest</td>
                     <td>$562.00</td>
                   </tr>
                   <tr>
                     <td>08/19/2020</td>
-                    <td>Envato March 2019 Member Payment</td>
                     <td>interest</td>
                     <td>$562.00</td>
                   </tr>
                   <tr>
                     <td>08/19/2020</td>
-                    <td>Envato March 2019 Member Payment</td>
                     <td>interest</td>
                     <td>$562.00</td>
                   </tr>
@@ -185,7 +187,52 @@
           </div>
         </section>
      <!-- Detail Form Sec End -->
+<!-- Reciever info Popup Start -->
 
+<div class="modal fade" id="deposit-money-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      
+       <div class="single-popup">
+         <div class="single-pop-title">
+           <h4>Deposit Money</h4>
+         </div>
+         <form>
+          <div class="row">
+            <div class="col-md-12">
+              <label>Amount</label>
+              <select>
+               <option>1000</option>
+               <option>1000</option>
+               <option>1000</option>
+               
+              </select>
+             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <label>Payment Method</label>
+              <select>
+               <option>Credit or Debit Cards</option>
+               <option>Credit or Debit Cards</option>
+               <option>Credit or Debit Cards</option>
+               
+              </select>
+             </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6"><button>Submit</button></div>
+          </div>
+         </form>
+       </div>
+
+    </div>
+  </div>
+</div>
 
      <!-- Newsletter Sec Start -->
       <section class="nwsltr-sec">
@@ -203,7 +250,6 @@
 
             <div class="col-md-4">
               <div class="nwesltr-blk-title">
-                <h6>Email</h6>
                 <h3>Subscribe to Our Newsletter</h3>
               </div>
             </div>
