@@ -1066,7 +1066,7 @@ input[type="checkbox"]:checked + label::before {
 
 /*Login Popup Start*/
 .singin-title-lft img {
-    width: 100%;
+    width: 103%;
 }
 .singin-title-lft {
     position: relative;
@@ -1085,12 +1085,14 @@ input[type="checkbox"]:checked + label::before {
     color: #A3A1BC;
     font-size: 16px;
     line-height: 24px;
+    margin-bottom: 100px;
 }
 .col-popup {
     background-color: #F4F8FD;
 }
 .popup-sign-form {
-    padding-right: 5%;
+    padding-right: 7%;
+    padding-left: 4%;
 }
 .col-popup .row {
     display: flex;
@@ -1144,6 +1146,17 @@ input[type="checkbox"]:checked + label::before {
     color: #fff;
     padding: 12px 0;
     border-radius: 30px;
+}
+
+.popup-sign-form form a.verify-btn {
+    display: block;
+    width: 100%;
+    background-color: #93c144;
+    border: none;
+    color: #fff;
+    padding: 12px 0;
+    border-radius: 30px;
+    text-align: center;
 }
 .sign-up-link span {
     color: #3584d4;
@@ -1275,6 +1288,162 @@ i.fa.fa-minus, i.fa.fa-plus {
     margin: 5px;
     cursor:pointer;
 }
+.cont{
+    width: 94%;
+    margin: 100px auto; 
+}
+.progressbar {
+    counter-reset: step;
+}
+.progressbar li {
+    list-style-type: none;
+    width: 23%;
+    float: left;
+    font-size: 16px;
+    position: relative;
+    text-align: center;
+    text-transform: capitalize;
+    color: #AAA5BD;
+    font-family: 'OpenSans-Bold';
+}
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: counter(step);
+    counter-increment: step;
+    line-height: 30px;
+    border: 2px solid #7d7d7d;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+}
+.progressbar li:after {
+    width: 100%;
+    height: 2px;
+    content: '';
+    position: absolute;
+    background-color: #7d7d7d;
+    top: 15px;
+    left: -50%;
+    z-index: -1;
+}
+.progressbar li:first-child:after {
+    content: none;
+}
+.progressbar li.active {
+    color: #93c144;
+}
+.progressbar li.active:before {
+    border-color: #93c144;
+    background-image: url(../images/checked.png);
+    background-color: white;
+    background-size: cover;
+    background-repeat-y: no-repeat;
+    background-position: center center;
+}
+.progressbar li.active + li:after {
+    background-color: #55b776;
+}
+.progressbar li:before {
+    width: 30px;
+    height: 30px;
+    content: '';
+    counter-increment: step;
+    line-height: 27px;
+    display: block;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url('../images/unchecked.png');
+    background-size: cover;
+    background-repeat-y: no-repeat;
+    background-position: center center;
+    position:relative;
+    z-index: 1111;
+    border:none;
+}
+.progressbar li.active + li:after {
+    background-color: #55b776;
+}
+
+.progressbar li:after {
+    width: 100%;
+    height: 6px;
+    content: '';
+    position: absolute;
+    background-color: #EFEFEF;
+    top: 12px;
+    left: -50%;
+    z-index: 0;
+}
+.new-popups h4 {
+    color: #2E3D62;
+    font-size: 24px;
+}
+
+.new-popups h5 {
+    margin-bottom: 3px;
+    font-size: 18px;
+}
+
+.new-popups p {
+    font-size: 14px;
+    color: #AAA5BD;
+    margin: 0;
+}
+.new-popups hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.new-popups .single-pop-title {
+    margin: 0;
+}
+
+.new-popups span.amount {
+    color: #EE5A55;
+    font-family: 'OpenSans-Bold';
+    display: block;
+}
+.marBtm-2{ margin-bottom:20px !important}
+.signin-it a {
+    background: #3584D5;
+    color: #fff;
+    border-radius: 50px;
+    box-shadow: none;
+    /* margin-top: 100px; */
+    padding: 5px 13px;
+}
+.modal.verify-pop {
+    z-index: 1050;
+}
+.email-veri .modal-content {
+    padding: 60px;
+    background: #f4f8fd;
+}
+.email-veri p{color:#AAA5BD}
+.email-veri a {
+    background-color: #93c144;
+    padding: 12px 70px !important;
+    display: inline-block;
+    border-radius: 50px;
+    color: #fff;
+}
+.email-veri.modal.in .modal-dialog {
+    width: 600px;
+}/* Set the size of the div element that contains the map */
+#map {
+    margin-top:100px;
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
 @media only screen and (min-device-width:520px) and (max-device-width:767px) and (orientation:portrait) {}
 @media only screen and (min-device-width:120px) and (max-device-width:750px) and (orientation:landscape) {}
 @media only screen and (min-device-width:751px) and (max-device-width:999px) and (orientation:portrait) {}

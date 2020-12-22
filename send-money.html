@@ -19,9 +19,9 @@
   <body>
 
 
-<!-- Bank Account Recieve Popup Start -->
+<!-- Cash PickupPopup Start -->
 
-<div class="modal fade" id="bank-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="cash-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -37,18 +37,18 @@
            <div class="col-md-3"><label>Your Name:</label></div>
            <div class="col-md-9"><input type="" name="" placeholder="David Thompson"></div>
          </div>
-         <div class="row">
-           <div class="col-md-3"><label>Bank Name</label></div>
-           <div class="col-md-9"><input type="" name="" placeholder="Bank of America"></div>
-         </div>
-         <div class="row">
-           <div class="col-md-3"><label>Bank Code:</label></div>
-           <div class="col-md-9"><input type="" name="" placeholder="0111"></div>
-         </div>
-         <div class="row">
-           <div class="col-md-3"><label>Account#</label></div>
-           <div class="col-md-9"><input type="" name="" placeholder="1596 Feathers Hooves Drive, Scarsdale, NY"></div>
-         </div>
+          <!-- <div class="row">
+            <div class="col-md-3"><label>Bank Name</label></div>
+            <div class="col-md-9"><input type="" name="" placeholder="Bank of America"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3"><label>Bank Code:</label></div>
+            <div class="col-md-9"><input type="" name="" placeholder="0111"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-3"><label>Account#</label></div>
+            <div class="col-md-9"><input type="" name="" placeholder="1596 Feathers Hooves Drive, Scarsdale, NY"></div>
+          </div> -->
          <div class="row">
            <div class="col-md-3"><label>Mobile#</label></div>
            <div class="col-md-9"><input type="" name="" placeholder="123 9652 456"></div>
@@ -65,6 +65,48 @@
 </div>
 
 <!-- Bank Account Recieve Popup Start -->
+<div class="modal fade" id="bank-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      
+       <div class="single-popup">
+         <div class="single-pop-title">
+           <h4>Bank Account Receiver Detailservier Details</h4>
+         </div>
+         <form>
+         <div class="row">
+           <div class="col-md-3"><label>Your Name:</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="David Thompson"></div>
+         </div>
+          <div class="row">
+            <div class="col-md-3"><label>Bank Name</label></div>
+            <div class="col-md-9"><input type="" name="" placeholder="Bank of America"></div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-md-3"><label>Bank Code:</label></div>
+            <div class="col-md-9"><input type="" name="" placeholder="0111"></div>
+          </div> -->
+          <div class="row">
+            <div class="col-md-3"><label>Account#</label></div>
+            <div class="col-md-9"><input type="" name="" placeholder="1596 Feathers Hooves Drive, Scarsdale, NY"></div>
+          </div>
+         <div class="row">
+           <div class="col-md-3"><label>Mobile#</label></div>
+           <div class="col-md-9"><input type="" name="" placeholder="123 9652 456"></div>
+         </div>
+         <div class="row">
+           <div class="col-md-6"></div>
+           <div class="col-md-6"><button>Submit</button></div>
+         </div>
+         </form>
+       </div>
+
+    </div>
+  </div>
+</div>
 
 
 <!-- Reciever info Popup Start -->
@@ -78,7 +120,7 @@
       
        <div class="single-popup">
          <div class="single-pop-title">
-           <h4>receiver information</h4>
+           <h4>Receiver information</h4>
          </div>
          <form>
          <div class="row">
@@ -133,7 +175,7 @@
 
             <div class="col-md-3">
             <div class="navbar-header">
-              <a class="navbar-brand" href="index.html"><img src="images/Logo.svg" alt=""></a>
+              <a class="navbar-brand" href="index.html"><img src="images/Logo.png" alt=""></a>
             </div>
             </div>
 
@@ -225,7 +267,7 @@
                         </div>
                     </div>
                   </div>
-                  <h6 class="tg-line">Estimated Exchange rate: <span class="red">100USD = 1 USD = 0.842426 EUR</span></h6>
+                  <h6 class="tg-line">Estimated Exchange rate: <span class="red">= 1 USD = 0.842426 EUR</span></h6>
                 </div>
                 </form>
               
@@ -236,7 +278,7 @@
                <div class="row">
                  
                  <div class="col-md-4">
-                   <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#bank-pop">
+                   <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cash-pop">
                       <img src="images/rv-mny-1.svg" alt="">
                       <span>
                        <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
@@ -266,7 +308,7 @@
                    </div>
                  </div>
                  <div class="col-md-4">
-                   <div class="revc-mny-blk">
+                   <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#bank-pop">
                       <img src="images/rv-mny-4.svg" alt="">
                       <span>
                        <input type="checkbox" id="fruit4" name="fruit-1" value="Apple">
@@ -345,7 +387,7 @@
                  <li>Transfer fee <span>+0.00 EUR</span></li>
                  <li>Transfer total <span>200.00 EUR</span></li>
                </ul>
-               <h5>Total to receiver <span>28500 eUR</span></h5>
+               <h5>Total to receiver <span>28500 EUR</span></h5>
              </div>
 
 
@@ -420,9 +462,9 @@
               <div class="ftr-links ftr-links1">
                  <h4>Support</h4>
                  <ul>
-                   <li><a href="">FAQ</a></li>
+                   <li><a href="">Help and Support</a></li>
                    <li><a href="">Contact us</a></li>
-                   <li><a href="">Term Service</a></li>
+                   <li><a href="">Terms and Conditions</a></li>
                  </ul>
               </div>
             </div>
@@ -480,13 +522,101 @@
         </div>
       </div>
      <!-- Footer End -->
+       <!-- Forgot pass Popup Start -->
+<div class="modal fade signup-pop" id="forgot-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      
+      <div class="col-popup">
+         <div class="row">
+           
+           <div class="col-md-6 col-popup-grid">
+             <div class="singin-title-lft">
+             <img src="images/bg1.svg" alt="">
+               <div class="signin-it">
+                 <h3>Manage Password</h3>
+                 <p>Payment Template is our new Online Payment & Banking HTML Template.</p>
+               </div>
+             </div>
+           </div>
+           <div class="col-md-6">
+            <div class="popup-sign-form">
+              <div class="sin-title">
+                <h4>Change Password</h4>
+                <p>Enter your new password, then tap Change Password.</p>
+              </div>
+              <form>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Old Password</label>
+                    <input type="" name="" placeholder="***************">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>New Password</label>
+                    <input type="" name="" placeholder="***************">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label>Re-Type Password</label>
+                    <input type="" name="" placeholder="***************">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <button>Submit</button>
+                  </div>
+                </div>
+                
+              </form>
+            </div>
+           </div>
 
+         </div> 
+      </div>
 
+    </div>
+  </div>
+</div>
+<!-- Forgot pas Popup End -->
+<!-- <a type="button" class="btn btn-primary signin-pop" data-toggle="modal" data-target="#email-veri-popup">Sign Up for free</a> -->
+  <!-- EMAIL VERIFICATION Popup Start -->
+  <div class="modal fade email-veri " id="email-veri-popup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog modal-lg" role="document">
+     <div class="modal-content">
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+           <span aria-hidden="true">&times;</span>
+         </button>
+       
+       <div class="col-popup">
+          <div class="row">
+            <div class="col-md-12 text-center">
+               <img src="./images/env.png" alt="">
+               <h4>Email Verification</h4>
+               <p>Email has been sent to your email address, please verify to receive emails.</p>
+               <a href="">OK</a>
+            </div>
+          </div> 
+       </div>
+ 
+     </div>
+   </div>
+ </div>
+ <!-- Email Verification Popup End -->
 
 
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/all.js"></script>
     <script src="js/custom.min.js"></script>
-
+    <script>
+      $(document).ready(function(){
+          $("#email-veri-popup").modal('show');
+      });
+  </script>
   </body>
 </html>
