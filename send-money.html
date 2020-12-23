@@ -30,7 +30,7 @@
       
        <div class="single-popup">
          <div class="single-pop-title">
-           <h4>Bank Account Receiver Detailservier Details</h4>
+           <h4>Bank Account Receiver Details</h4>
          </div>
          <form>
          <div class="row">
@@ -245,7 +245,7 @@
                     <div class="flg-blk flg-blk1">
                     <input type="" name="" placeholder="100.00">
                      <div class="drop-dl">
-                      <a class="lang-chose" href="#"><img src=""><span>USD</span></a>
+                      <a class="lang-chose" href="#"><img src="images/uk-flg.png"><span>USD</span></a>
                         <ul>
                         <li class="lang-item-en current-lang"><a href="#" hreflang="en-US"><img alt="uk" title="uk" src="images/uk-flg.png"></a></li>
                         <li class="lang-item lang-item-5 lang-item-ar"><a href="#" hreflang="ar-AE"><img alt="fr" title="fr" src="images/fr-flg.png"></a></li>
@@ -257,8 +257,8 @@
                     <label>Recipient Gets</label>
                     <div class="flg-blk">
                     <input type="" name="" placeholder="84.2426">
-                    <div class="drop-dl">
-                      <a class="lang-chose" href="#"><img src=""><span>USD</span></a>
+                    <div class="drop-dl drop-dl1">
+                      <a class="lang-chose lang-chose1" href="#"><img src="images/fr-flg.png"><span>USD</span></a>
                         <ul>
                         <li class="lang-item-en current-lang"><a href="#" hreflang="en-US"><img alt="uk" title="uk" src="images/uk-flg.png"></a></li>
                         <li class="lang-item lang-item-5 lang-item-ar"><a href="#" hreflang="ar-AE"><img alt="fr" title="fr" src="images/fr-flg.png"></a></li>
@@ -409,7 +409,7 @@
                 <input class="agree-check" type="checkbox" id="agree" name="agree" value="agree">
                 <label for="agree"> I agree to the PAMxpress</label><br>
                </form>
-               <a href="">Send Money</a>
+               <a type="button" data-toggle="modal" data-target="#rcivr-pop">Send Money</a>
              </div>
 
             <div
@@ -613,10 +613,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="js/all.js"></script>
     <script src="js/custom.min.js"></script>
+
     <script>
       $(document).ready(function(){
           $("#email-veri-popup").modal('show');
       });
   </script>
+
   </body>
 </html>
