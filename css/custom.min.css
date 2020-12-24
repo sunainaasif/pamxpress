@@ -1523,6 +1523,16 @@ input.quantity {
     margin-top: 20px;
     cursor: pointer;
 }
+.blue-btn {
+    background-color: #3584d4 !important;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    padding: 12px 50px;
+    border-radius: 30px;
+    margin-top:20px;
+    cursor: pointer;
+}
 input[type="checkbox"]:checked + label::before {
     background-color: #93C144;
     border-color: #93C144;
@@ -1532,7 +1542,115 @@ input[type="checkbox"]:checked + label::before {
 .disabled-btn {
     background: gray !important;
 }
+.float-right{float:right}
+a[type="button"]{cursor:pointer}
+.edit-icon{
+    color: #ffffff;
+    background: #93c144;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 19px;
+    float:right;
+}
 
+.warpper{
+    /* display:flex;
+    flex-direction: column;
+    align-items: center; */
+  }
+  .tab{
+    cursor: pointer;
+    padding:10px 20px;
+    margin:0px 2px;
+    background:#3584d4;
+    display:inline-block;
+    color:#fff;
+    border-radius:3px 3px 0px 0px;
+    box-shadow: 0 0.5rem 0.8rem #00000080;
+  }
+  .panels {
+    /* background: #fffffff6; */
+    /* box-shadow: 0 2rem 2rem #00000080; */
+    min-height: 200px;
+    width: 100%;
+    /* max-width: 500px; */
+    /* border-radius: 3px; */
+    /* overflow: hidden; */
+    padding: 20px 0;
+}
+  .panel{
+    display:none;
+    animation: fadein .8s;
+  }
+  @keyframes fadein {
+      from {
+          opacity:0;
+      }
+      to {
+          opacity:1;
+      }
+  }
+  .panel-title{
+    font-size:1.5em;
+    font-weight:bold
+  }
+  .radio{
+    display:none;
+  }
+  #one:checked ~ .panels #one-panel,
+  #two:checked ~ .panels #two-panel,
+  #three:checked ~ .panels #three-panel{
+    display:block
+  }
+  #one:checked ~ .tabs #one-tab,
+  #two:checked ~ .tabs #two-tab,
+  #three:checked ~ .tabs #three-tab{
+    background:#fffffff6;
+    color:#000;
+    border-top: 3px solid #3584d4;
+  }
+  .app-ss{
+      padding-top:100px;
+  }
+  .bg-properties{     background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f4f8fd;
+    padding-top: 500px;}
+    .app-ss ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom:30px
+    }
+    
+    .app-ss ul li i {
+        color: green;
+        margin-right: 20px;
+        font-size: 24px;
+    }
+    
+    .app-ss ul li {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 20px;
+    }
+.d-button{display:flex}
+.btn-div{height:100px}
+.btn-div img{height:auto}
+.app-ss p {
+    font-size: 24px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.mobile-screen {
+    height: 900px;
+    text-align: center;
+    margin-top: -140px;
+}
+.mobile-screen img{
+    height: 100%;
+}
+.text-white{color:#fff !important}
 @media only screen and (min-device-width:520px) and (max-device-width:767px) and (orientation:portrait) {}
 @media only screen and (min-device-width:120px) and (max-device-width:750px) and (orientation:landscape) {}
 @media only screen and (min-device-width:751px) and (max-device-width:999px) and (orientation:portrait) {}
