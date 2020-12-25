@@ -21,7 +21,7 @@
 
 <!-- Cash PickupPopup Start -->
 
-<div class="modal fade" id="cash-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="e-wallet-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -30,29 +30,33 @@
       
        <div class="single-popup">
          <div class="single-pop-title">
-           <h4>Bank Account Receiver Details</h4>
+           <h4>Search Receiver </h4>
          </div>
          <form>
          <div class="row">
-           <div class="col-md-3"><label>Your Name:</label></div>
-           <div class="col-md-9"><input type="" name="" placeholder="David Thompson"></div>
+           <div class="col-md-3"><label>Enter Email:</label></div>
+           <div class="col-md-9"><input type="email" name="" placeholder="DavidThompson@mail.com"></div>
          </div>
-          <!-- <div class="row">
-            <div class="col-md-3"><label>Bank Name</label></div>
-            <div class="col-md-9"><input type="" name="" placeholder="Bank of America"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-3"><label>Bank Code:</label></div>
-            <div class="col-md-9"><input type="" name="" placeholder="0111"></div>
-          </div>
-          <div class="row">
-            <div class="col-md-3"><label>Account#</label></div>
-            <div class="col-md-9"><input type="" name="" placeholder="1596 Feathers Hooves Drive, Scarsdale, NY"></div>
-          </div> -->
-         <div class="row">
-           <div class="col-md-3"><label>Mobile#</label></div>
-           <div class="col-md-9"><input type="" name="" placeholder="123 9652 456"></div>
+         <div class="receiver-found" style="display:none">
+           <div class="row">
+            
+             <div class="col-md-12">
+               <div class="rcvr-email">
+                 <div class="rcvr-img">
+                   <img src="images/prof-img.png" alt="">
+                 </div>
+                 <div>
+                  <p>Madison Iseman</p>
+                  <p>Madisoniseman@gmail.com</p>
+                 </div>
+               </div>
+             </div>
+           </div>
          </div>
+         <div class="receiver-not-found text-center">
+           <p>Receiver not found <a href="#"> <span>Send Invitation </span></a> </p>
+         </div>
+         
          <div class="row">
            <div class="col-md-6"></div>
            <div class="col-md-6"><button>Submit</button></div>
@@ -85,10 +89,6 @@
             <div class="col-md-3"><label>Bank Name</label></div>
             <div class="col-md-9"><input type="" name="" placeholder="Bank of America"></div>
           </div>
-          <!-- <div class="row">
-            <div class="col-md-3"><label>Bank Code:</label></div>
-            <div class="col-md-9"><input type="" name="" placeholder="0111"></div>
-          </div> -->
           <div class="row">
             <div class="col-md-3"><label>Account#</label></div>
             <div class="col-md-9"><input type="" name="" placeholder="1596 Feathers Hooves Drive, Scarsdale, NY"></div>
@@ -278,32 +278,34 @@
                <div class="row">
                  
                  <div class="col-md-4">
-                   <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cash-pop">
+                    <!-- <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cash-pop"> -->
+                    <div class="revc-mny-blk" type="button" class="btn btn-primary">
                       <img src="images/rv-mny-1.svg" alt="">
                       <span>
-                       <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
-                       <label for="fruit1"></label>
-                       </span>
+                        <input type="radio" id="byCash" name="how" value="Strawberry">
+                        <label for="byCash"></label>
+                        </span>
                       <h6>Cash pick up</h6>
                    </div>
                  </div>
                  <div class="col-md-4">
-                   <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#rcivr-pop">
+                   <!-- <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#rcivr-pop"> -->
+                    <div class="revc-mny-blk" >
                       <img src="images/rv-mny-2.svg" alt="">
                       <span>
-                       <input type="checkbox" id="fruit2" name="fruit-1" value="Apple">
-                       <label for="fruit1"></label>
-                       </span>
+                        <input type="radio" id="home" name="how" value="Strawberry">
+                        <label for="home"></label>
+                        </span>
                       <h6>Home Delivery</h6>
                    </div>
                  </div>
                  <div class="col-md-4">
-                   <div class="revc-mny-blk">
+                   <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#e-wallet-pop">
                       <img src="images/rv-mny-3.svg" alt="">
                       <span>
-                       <input type="checkbox" id="fruit3" name="fruit-1" value="Apple">
-                       <label for="fruit1"></label>
-                       </span>
+                        <input type="radio" id="wallet" name="how" value="Strawberry">
+                        <label for="wallet"></label>
+                        </span>
                       <h6>E-Wallet</h6>
                    </div>
                  </div>
@@ -311,9 +313,9 @@
                    <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#bank-pop">
                       <img src="images/rv-mny-4.svg" alt="">
                       <span>
-                       <input type="checkbox" id="fruit4" name="fruit-1" value="Apple">
-                       <label for="fruit1"></label>
-                       </span>
+                        <input type="radio" id="bank" name="how" value="Strawberry">
+                        <label for="bank"></label>
+                      </span>
                       <h6>Bank Account</h6>
                    </div>
                  </div>
@@ -332,9 +334,11 @@
                    <div class="revc-mny-blk">
                       <img src="images/pay-icon1.svg" alt="">
                       <span>
-                       <input type="checkbox" id="fruit1" name="fruit-1" value="Apple">
-                       <label for="fruit1"></label>
-                       </span>
+                        <input type="radio" id="cc" name="how-pay" value="Strawberry">
+                        <label for="cc"></label>
+                      </span>
+
+
                       <h6>Credit Card</h6>
                    </div>
                  </div>
@@ -342,9 +346,11 @@
                    <div class="revc-mny-blk">
                       <img src="images/pay-icon2.svg" alt="">
                       <span>
-                       <input type="checkbox" id="fruit2" name="fruit-1" value="Apple">
-                       <label for="fruit1"></label>
-                       </span>
+                        <input type="radio" id="dc" name="how-pay" value="Strawberry">
+                        <label for="dc"></label>
+                      </span>
+
+
                       <h6>Dabit Card</h6>
                    </div>
                  </div>
@@ -352,19 +358,23 @@
                    <div class="revc-mny-blk">
                       <img src="images/pay-icon3.svg" alt="">
                       <span>
-                       <input type="checkbox" id="fruit3" name="fruit-1" value="Apple">
-                       <label for="fruit1"></label>
-                       </span>
+                        <input type="radio" id="pp" name="how-pay" value="Strawberry">
+                        <label for="pp"></label>
+                      </span>
+
+
                       <h6>PayPal</h6>
                    </div>
                  </div>
                  <div class="col-md-4">
-                   <div class="revc-mny-blk">
+                   <div class="revc-mny-blk" type="button" class="btn btn-primary" data-toggle="modal" data-target="#pay-by-ewallet-pop">
                       <img src="images/pay-icon4.svg" alt="">
                       <span>
-                       <input type="checkbox" id="fruit4" name="fruit-1" value="Apple">
-                       <label for="fruit1"></label>
-                       </span>
+                        <input type="radio" id="bnk" name="how-pay" value="Strawberry">
+                        <label for="bnk"></label>
+                      </span>
+
+
                       <h6>Ewallet</h6>
                    </div>
                  </div>
@@ -608,6 +618,145 @@
    </div>
  </div>
  <!-- Email Verification Popup End -->
+ <!--  Pay By E-wallet Popup Start -->
+<div class="modal fade" id="pay-by-ewallet-pop" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      
+       <div class="single-popup">
+         <div class="single-pop-title">
+           <h4>E-Wallet</h4>
+         </div>
+         <div class="warpper">  
+          <input class="radio" id="one" name="group" type="radio" checked>
+          <input class="radio" id="two" name="group" type="radio">
+          <input class="radio" id="three" name="group" type="radio">
+          <div class="tabs">
+          <label class="tab" id="one-tab" for="one">USD</label>
+          <label class="tab" id="two-tab" for="two">PHP</label>
+          <label class="tab" id="three-tab" for="three">HTG</label>
+            </div>
+          <div class="panels">
+          <div class="panel" id="one-panel">
+            <div class="wallet-blk-main">
+              <div class="row">
+                
+                <div class="col-md-12">
+                  <div class="wlet-blk text-center">
+                    <span class="folder-img text-center">
+                      <img src="./images/folder.png" alt="">
+                    </span>
+                    <h4>$2956.00</h4>
+                    <h6>Available Balance</h6>
+                  </div>
+                </div>
+            
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <a href="#">
+                    <div class="dep-amm int-earned"  data-toggle="modal" data-target="#deposit-money-pop" >
+                      <h5>Interest Earned</h5>
+                      <h5>$2</h5>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <a type="button" class="done-btn"> Done</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel" id="two-panel">
+            <div class="wallet-blk-main">
+              <div class="row">
+                
+                <div class="col-md-12">
+                  <div class="wlet-blk text-center">
+                    <span class="folder-img text-center">
+                      <img src="./images/folder.png" alt="">
+                    </span>
+                    <h4>$2956.00</h4>
+                    <h6>Available Balance</h6>
+                  </div>
+                </div>
+            
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <a href="#">
+                    <div class="dep-amm int-earned"  data-toggle="modal" data-target="#deposit-money-pop" >
+                      <h5>Interest Earned</h5>
+                      <h5>$2</h5>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <a type="button" class="done-btn"> Done</a>
+                </div>
+              </div>
+            </div>
+   
+          </div>
+          <div class="panel" id="three-panel">
+            <div class="wallet-blk-main">
+              <div class="row">
+                
+                <div class="col-md-12">
+                  <div class="wlet-blk text-center">
+                    <span class="folder-img text-center">
+                      <img src="./images/folder.png" alt="">
+                    </span>
+                    <h4>$2956.00</h4>
+                    <h6>Available Balance</h6>
+                  </div>
+                </div>
+            
+
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <a href="#">
+                    <div class="dep-amm int-earned"  data-toggle="modal" data-target="#deposit-money-pop" >
+                      <h5>Interest Earned</h5>
+                      <h5>$2</h5>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <a type="button" class="done-btn"> Done</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+
+
+
+
+          <!----------------------------->
+     
+        </div>
+       </div>
+
+    </div>
+  </div>
+</div>
+<!-- ---------- -->
 
 
     <!-- Placed at the end of the document so the pages load faster -->
@@ -616,7 +765,7 @@
 
     <script>
       $(document).ready(function(){
-          $("#email-veri-popup").modal('show');
+          // $("#email-veri-popup").modal('show');
       });
   </script>
 
